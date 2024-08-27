@@ -21,7 +21,7 @@ public class CamMove : MonoBehaviour
     void Update()
     {
         transform.position = Vector3.Lerp(initPos, Vector3.zero, t1.value);
-        transform.rotation = Quaternion.Lerp(initRot, Quaternion.identity, t2.value);
+        transform.rotation = Quaternion.Lerp(initRot, Quaternion.identity, t1.value);
         if (Input.GetKeyDown(KeyCode.P))
         {
             foreach (GameObject g in gameObjects)

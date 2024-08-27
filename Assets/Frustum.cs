@@ -10,7 +10,7 @@ public class Frustum : MonoBehaviour
     public Material[] mat;
     public LineRenderer line;
     // public float t, t2;
-    public Slider t, t2;
+    public Slider t, t2, t3, t4;
 
     void Update()
     {
@@ -28,9 +28,11 @@ public class Frustum : MonoBehaviour
             m.SetMatrix("_IView", cam.cameraToWorldMatrix);
             m.SetFloat("_Near", cam.nearClipPlane);
             m.SetFloat("_Far", cam.farClipPlane);
-            if (t2.value == 1) t2.value = 0.999f;
             m.SetFloat("_t", t.value);
             m.SetFloat("_t2", t2.value);
+            m.SetFloat("_t3", t3.value);
+            if (t4.value == 1) t4.value = 0.999f;
+            m.SetFloat("_t4", t4.value);
         }
     }
 }
