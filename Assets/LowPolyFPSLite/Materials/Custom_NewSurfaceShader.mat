@@ -33,7 +33,7 @@ Material:
     - _Glossiness: 0.5
     - _Metallic: 0
     - _Near: 6.9
-    - _t: 1
+    - _t: 0
     - _t2: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
